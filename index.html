@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Text Analyzer</title>
+</head>
+
+<body>
+    <header>
+        <h1>Text Analyzer</h1>
+    </header>
+    <div class="container">
+        <div class="input">
+            <textarea name="input" id="textArea" cols="30" rows="10" placeholder="Enter your text here..." spellcheck="false"></textarea>
+            <div class="btn">
+                <button id="analyze">
+                    Analyze
+                </button>
+                <button id="reset">
+                    Reset
+                </button>
+            </div>
+        </div>
+        <div class="output">
+            <div class="first">
+                <div class="box">
+                    <p>Sentences</p>
+                    <h1 id="sentences">0</h1>
+                </div>
+                <div class="box">
+                    <p>Words</p>
+                    <h1 id="words">0</h1>
+                </div>
+                <div class="box">
+                    <p>Character</p>
+                    <h1 id="char">0</h1>
+                </div>
+            </div>
+            <div class="second">
+                <div class="box">
+                    <p>Digits</p>
+                    <h1 id="digits">0</h1>
+                </div>
+
+                <div class="box">
+                    <p>Vowels</p>
+                    <h1 id="vowels">0</h1>
+                </div>
+                <div class="box">
+                    <p>Consonants</p>
+                    <h1 id="consonants">0</h1>
+                </div>
+            </div>
+            <div class="third">
+                <div class="box">
+                    <p>Spaces</p>
+                    <h1 id="spaces">0</h1>
+                </div>
+                <div class="box">
+                    <p>Lowercase</p>
+                    <h1 id="lowercase">0</h1>
+                </div>
+                <div class="box">
+                    <p>Uppercase</p>
+                    <h1 id="uppercase">0</h1>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
