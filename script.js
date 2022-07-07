@@ -15,6 +15,7 @@ let textInput = document.querySelector('#textArea');
 
 const analyzeBtn = document.querySelector("#analyze");
 const resetBtn = document.querySelector("#reset");
+const ttsBtn = document.querySelector('#tts');
 
 resetBtn.addEventListener("click",(element)=>{
 
@@ -25,6 +26,19 @@ resetBtn.addEventListener("click",(element)=>{
 
 analyzeBtn.addEventListener('click',(element)=> {
     calculateData();
+});
+
+ttsBtn.addEventListener('click',(element)=>{
+
+    if(textInput.value != ''){
+        var msg = new SpeechSynthesisUtterance(textInput.value);
+        window.speechSynthesis.speak(msg);
+    }
+    else{
+        var msg = new SpeechSynthesisUtterance('Please Enter some Text');
+        window.speechSynthesis.speak(msg);
+    }
+
 });
 
 function calculateData(){

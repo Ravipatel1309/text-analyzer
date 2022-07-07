@@ -48,6 +48,11 @@ header{
     transition: 0.5s;
 }
 
+.btn #tts{
+    width: fit-content;
+    padding: 0 1rem;
+}
+
 .btn button:hover{
     background-color: white;
     color: #6B00D7;
